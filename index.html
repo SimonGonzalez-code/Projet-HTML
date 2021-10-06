@@ -7,6 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Bienvenue sur un mini site d'introduction aux échecs</h1>
+
+    <h2>Le plateau</h2>
+    <img src="./assets/MatSot-0.gif">
+    <p>Le plateau aux échecs est composé de 64 cases. Il s'agit d'un carré de 8x8.</p>
+    <p>Les colonnes sont désignées par des lettres allant de a à h et les lignes sont désignées par des chiffres allant de 1 à 8.</p>
+    <p>Le plateau est un damier qui alterne entre case claire et case sombre.</p>
+    <p>Exemple : Le roi noir commence la partie en e8 et la reine blanche commence la partie en d1</p>
+
+    <h2>Les pièces</h2>
+    <img src="./assets/index.png">
+    <p>Il existe six pièces différentes aux échecs :</p>
+    <ol>
+        <li><a href="#pion">Le pion</a></li>
+        <li><a href="#fou">Le fou</a></li>
+        <li><a href="#cavalier">Le cavalier</a></li>
+        <li><a href="#tour">La tour</a></li>
+        <li><a href="#reine">La reine</a></li>
+        <li><a href="#roi">Le roi</a></li>
+    </ol>
+    <p>Chaque pièce dispose de mouvements spécifiques</p>
+
+    <h3 id="pion">Le pion</h3>
+    <img src="./assets/index.jpg">
+    <p>Chaque joueur dispose de 8 pions en début de partie.</p>
+    <p>Le pion ne peut avancer qu'à la verticale et il ne peux avancer qu'en direction du camp adverse.</p>
+    <p>Si un pion n'a pas encore bougé dans la partie, il peut avancer de deux cases. Sinon il ne peut avancer que d'une case par mouvement.</p>
+    <p>Le pion ne peut capturer une pièce adverse qu'en diagonale devant lui.</p>
+    <p>Exemple : si un pion blanc se trouve en e4, il ne peut capturer que les pièces adverses présentes en d5 et en f5.</p>
+    <p>A l'inverse si le pion en e4 est noir il ne peut capturer que les pièces adverses présentes en d3 et en f3.</p>
+
+    <h3 id="fou">Le fou</h3>
+    <p>Le fou ne peut se déplacer qu'en diagonale et, comme toutes les pièces, capture une pièce adverse en prenant sa place.</p>
+    <p>Chaque camp dispose d'un fou qui restera donc sur les cases claires et d'un fou qui restera sur les cases sombres.</p>
+    <p>Le fou peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
+    <p>Contrairement au cavalier, le fou ne peut pas se déplacer sur une case si une pièce adverse ou alliée se trouve sur le chemin.</p>
+
+    <h3 id="cavalier">Le cavalier</h3>
+    <img src="./assets/cavalier-deplacement.png">
+    <p>Le cavalier est la seule pièce aux échecs qui peut se déplacer par dessus les pièces adverses et alliés.</p>
+    <p>Il se déplace en "L", il peut potentiellement se déplacer sur 8 cases (sauf si elles sont occupées par des pièces alliées ou si il est trop proche du bord).</p>
+    <p>Voir photo ci-dessus pour clarification des possibilités de déplacements</p>
+
+    <h3 id="tour">La tour</h3>
+    <p>La tour se déplace à l'horizontal ou à la verticale.</p>
+    <p>Tout comme le fou il peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
+
+    <h3 id="reine">La reine</h3>
+    <img src="./assets/indexReine.jpg">
+    <p>C'est la pièce la plus puissante aux échecs.</p>
+    <p>Elle se déplace à l'horizontal, à la verticale ou en diagonale.</p>
+    <p>Elle possède la capacité de déplacement d'une tour et d'un fou, et tout comme eux, peut se déplacer d'autant de cases vides qu'elle le souhaite.</p>
+
+    <h3 id="roi">Le roi</h3>
+    <p>Pour finir le roi est la pièce la plus importante.</p>
+    <p>C'est le roi que l'on cherche à défendre tout en essayant d'attaquer le roi adverse.</p>
+    <p>Le roi peut se déplacer dans toutes les directions, comme une reine, mais ne peut se déplacer que d'une case à la fois.</p>
 </body>
 </html>
