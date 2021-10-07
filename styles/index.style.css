@@ -1,3 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
 h1 {
     text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+li {
+    font-size: 25px;
+}
+
+#plateau {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pieces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center {
+    text-align:center;
 }

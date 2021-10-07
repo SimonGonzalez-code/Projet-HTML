@@ -9,26 +9,41 @@
     </head>
     <body>
         <h1>Bienvenue sur un mini site d'introduction aux échecs</h1>
+        <div class = "center">
+            <img alt="" src="./assets/phpHsVKt1.gif" />
+        </div>
 
         <h2>Le plateau</h2>
-        <img src="./assets/MatSot-0.gif">
-        <p>Le plateau aux échecs est composé de 64 cases. Il s'agit d'un carré de 8x8.</p>
-        <p>Les colonnes sont désignées par des lettres allant de a à h et les lignes sont désignées par des chiffres allant de 1 à 8.</p>
-        <p>Le plateau est un damier qui alterne entre case claire et case sombre.</p>
-        <p>Exemple : Le roi noir commence la partie en e8 et la reine blanche commence la partie en d1</p>
+        <div id = "plateau">
+            <div>
+                <img src="./assets/MatSot-0.gif">
+            </div>
+            <div>
+                <p>Le plateau aux échecs est composé de 64 cases. Il s'agit d'un carré de 8x8.</p>
+                <p>Les colonnes sont désignées par des lettres allant de a à h et les lignes sont désignées par des chiffres allant de 1 à 8.</p>
+                <p>Le plateau est un damier qui alterne entre case claire et case sombre.</p>
+                <p>Exemple : Le roi noir commence la partie en e8 et la reine blanche commence la partie en d1</p>
+            </div>
+        </div>
 
         <h2>Les pièces</h2>
-        <img src="./assets/index.png">
-        <p>Il existe six pièces différentes aux échecs :</p>
-        <ol>
-            <li><a href="#pion">Le pion</a></li>
-            <li><a href="#fou">Le fou</a></li>
-            <li><a href="#cavalier">Le cavalier</a></li>
-            <li><a href="#tour">La tour</a></li>
-            <li><a href="#reine">La reine</a></li>
-            <li><a href="#roi">Le roi</a></li>
-        </ol>
-        <p>Chaque pièce dispose de mouvements spécifiques</p>
+        <div id ="pieces">
+            <div>
+                <img src="./assets/index.png">
+            </div>
+            <div>
+                <p>Il existe six pièces différentes aux échecs :</p>
+                <ol>
+                    <li><a href="#pion">Le pion</a></li>
+                    <li><a href="#fou">Le fou</a></li>
+                    <li><a href="#cavalier">Le cavalier</a></li>
+                    <li><a href="#tour">La tour</a></li>
+                    <li><a href="#reine">La reine</a></li>
+                    <li><a href="#roi">Le roi</a></li>
+                </ol>
+            </div>
+        </div>
+        <p class="center">Chaque pièce dispose de mouvements spécifiques</p>
 
         <h3 id="pion">Le pion</h3>
         <img src="./assets/index.jpg">
@@ -65,11 +80,43 @@
         <p>Pour finir le roi est la pièce la plus importante.</p>
         <p>C'est le roi que l'on cherche à défendre tout en essayant d'attaquer le roi adverse.</p>
         <p>Le roi peut se déplacer dans toutes les directions, comme une reine, mais ne peut se déplacer que d'une case à la fois.</p>
+        <p>Le roi ne peut pas capturer le roi adverse, en effet, si il s'approche du roi adverse il sera lui même capturable et un roi ne peut pas se mettre en danger.</p>
 
         <h2>Le but du jeu</h2>
         <p>Aux échecs le but du jeu est de capturer le roi adverse.</p>
         <p>Si un roi est menacé de capture par une pièce adverse il y a "échec au roi" ou plus simplement "échec".</p>
         <p>Lorsqu'il y a "échec", le joueur dont le roi est menacé ne peut jouer que des mouvements qui vont mettre son roi hors de danger.</p>
         <p>La partie s'arrête si un joueur n'a aucune possibilité pour défendre son roi ou le mettre hors de danger. Il y a alors "échec et mat".</p>
+
+        <h1>Règles complémentaires</h1>
+        <h2>Les différents types d'égalité</h2>
+        <p>L'égalité la plus évidente est si il ne reste plus que son roi à chaque joueur mais il existe d'autres situations où il y a match nul : </p>
+        <ol>
+            <li>L'égalité par manque de matériel</li>
+            <li>L'égalité par consentement mutuel</li>
+            <li>L'égalité par répétition</li>
+            <li>La régle des 50 coups</li>
+            <li>Le Pat</li>
+        </ol>
+
+        <h3>L'égalité par manque de matériel</h3>
+        <p>Il y a égalité si un joueur est dans l'impossibilité de mater son adversaire.</p>
+        <p>Cela se produit en roi contre roi, roi et fou contre roi et en roi et cavalier contre roi.</p>
+
+        <h3>L'égalité par consentement mutuel</h3>
+        <p>A tout moment de la partie, un joueur peut proposer la nulle.</p>
+        <p>Si son adversaire accepte, la partie est fini et il y a égalité.</p>
+
+        <h3>L'égalité par répétition</h3>
+        <p>Si une position sur le plateau est répétée trois fois de suite, c'est à dire si les pièces noirs et blanches se retrouvent à des positions identiques.</p>
+        <p>La partie est nulle par répétition.</p>
+
+        <h3>La règle des 50 coups</h3>
+        <p>Cette égalité est la moins commune aux échecs.</p>
+        <p>Si 50 coups se passent sans qu'un pion soit avancé ou qu'une pièce soit prise (25 coups par joueur), il y a égalité.</p>
+
+        <h3>Le Pat</h3>
+        <p>Si un joueur n'a aucun mouvement possible à son tour de jeu et que son roi n'est pas en échec, il y a Pat.</p>
+        <p>La partie est donc déclarée nulle.</p>
     </body>
 </html>
