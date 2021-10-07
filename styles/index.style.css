@@ -26,6 +26,11 @@ li {
     font-size: 25px;
 }
 
+#sommaire{
+    display: flex;
+    justify-content: space-around;
+}
+
 #plateau {
     display: flex;
     justify-content: space-around;
@@ -46,7 +51,7 @@ li {
     flex-direction: row-reverse;
 }
 
-#box {
+.box-speciaux {
     display: flex;
     justify-content:space-evenly;
     flex-flow: wrap row;

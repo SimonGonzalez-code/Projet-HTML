@@ -9,10 +9,48 @@
     </head>
     <body>
         <h1>Bienvenue sur un mini site d'introduction aux échecs</h1>
-        <div class = "center">
-            <img alt="" src="./assets/phpHsVKt1.gif" />
+        <div id ="sommaire">
+            <div>
+                <p>Sommaire :</p>
+                <ul>
+                    <li>I - Présentation Globale</li>
+                    <ul>
+                        <li>1 - Le plateau</li>
+                        <li>2 - Les pièces</li>
+                        <ul>
+                            <li>a - Le pion</li>
+                            <li>b - Le fou</li>
+                            <li>c - Le cavalier</li>
+                            <li>d - La tour</li>
+                            <li>e - La reine</li>
+                            <li>f - Le roi</li>
+                        </ul>
+                        <li>3 - Le but du jeu</li>
+                    </ul>
+                    <li>II - Règles complémentaires</li>
+                    <ul>
+                        <li>1 - Les différents types d'égalité</li>
+                        <ul>
+                            <li>a - L'égalité par manque de matériel</li>
+                            <li>b - L'égalité par consentement mutuel</li>
+                            <li>c - L'égalité par répétition</li>
+                            <li>d - La règle des 50 coups</li>
+                            <li>e - Le Pat</li>
+                        </ul>
+                        <li>2 - Les mouvements spéciaux</li>
+                        <ul>
+                            <li>a - La prise en passant</li>
+                            <li>b - Le Roque</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <img alt="" src="./assets/phpHsVKt1.gif" />
+            </div>
         </div>
 
+        <h1>Présentation globale</h1>
         <h2>Le plateau</h2>
         <div id = "plateau">
             <div>
@@ -61,7 +99,7 @@
         </div>
         <h3 id="fou">Le fou</h3>
         <p>Le fou ne peut se déplacer qu'en diagonale et, comme toutes les pièces, capture une pièce adverse en prenant sa place.</p>
-        <p>Chaque camp dispose d'un fou qui restera donc sur les cases claires et d'un fou qui restera sur les cases sombres.</p>
+        <p>Chaque camp dispose donc d'un fou qui restera sur les cases claires et d'un fou qui restera sur les cases sombres.</p>
         <p>Le fou peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
         <p>Contrairement au cavalier, le fou ne peut pas se déplacer sur une case si une pièce adverse ou alliée se trouve sur le chemin.</p>
 
@@ -139,7 +177,7 @@
         <h2>Les mouvements spéciaux</h2>
 
         <h3>Le Roque</h3>
-        <div id ="box">
+        <div class ="box-speciaux">
             <div>
                 <p>C'est le seul mouvement aux échecs qui permet de bouger deux pièces d'un coup.</p>
                 <p>Il concerne le roi et la tour et il ne peut s'effectuer que si les deux pièces n'ont pas bougé depuis le début de la partie.</p>
@@ -156,6 +194,18 @@
         </div>
 
         <h3>La prise en passant</h3>
-        <p></p>
+        <div class ="box-speciaux">
+            <div>
+                <p>C'est le seul coup aux échecs où une pièce adverse est prise sans que notre pièce ne se retrouve sur sa case.</p>
+                <p>Elle concerne uniquement les pions et est assez rare.</p>
+            </div>
+            <div>
+                <img src="./assets/220px-Ajedrez_animación_en_passant.gif" alt="">
+            </div>
+            <div>
+                <p>Pour pouvoir effectuer un "en passant" il faut qu'un pion adverse avance de deux cases et se retrouve à l'horizontal juste à côté d'un de nos pions</p>
+                <p>Le pion peut alors capturer cette pièce en se positionnant en diagonal sur la première case parcouru par le pion adverse.</p>
+            </div>
+        </div>
     </body>
 </html>
