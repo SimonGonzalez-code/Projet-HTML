@@ -8,203 +8,219 @@
         <link rel="stylesheet" href="./styles/index.style.css">
     </head>
     <body>
-        <h1>Bienvenue sur un mini site d'introduction aux échecs</h1>
-        <div id ="sommaire">
-            <div>
-                <p>Sommaire :</p>
-                <ul>
-                    <li>I - Présentation Globale</li>
+        <div id="marge">
+            <h1>Bienvenue sur un mini site d'introduction aux échecs</h1>
+            <div id ="sommaire">
+                <div>
+                    <p>Sommaire :</p>
                     <ul>
-                        <li>1 - Le plateau</li>
-                        <li>2 - Les pièces</li>
+                        <li><a href="#presentation-globale">I - Présentation Globale</a></li>
                         <ul>
-                            <li>a - Le pion</li>
-                            <li>b - Le fou</li>
-                            <li>c - Le cavalier</li>
-                            <li>d - La tour</li>
-                            <li>e - La reine</li>
-                            <li>f - Le roi</li>
+                            <li><a href="#ancre-plateau">1 - Le plateau</a></li>
+                            <li><a href="#ancre-pieces">2 - Les pièces</a></li>
+                            <ul>
+                                <li>a - Le pion</li>
+                                <li>b - Le fou</li>
+                                <li>c - Le cavalier</li>
+                                <li>d - La tour</li>
+                                <li>e - La reine</li>
+                                <li>f - Le roi</li>
+                            </ul>
+                            <li><a href="#but-du-jeu">3 - Le but du jeu</a></li>
                         </ul>
-                        <li>3 - Le but du jeu</li>
+                        <li><a href="#regle-complementaire">II - Règles complémentaires</a></li>
+                        <ul>
+                            <li><a href="#ancre-egalite">1 - Les différents types d'égalité</a></li>
+                            <ul>
+                                <li>a - L'égalité par manque de matériel</li>
+                                <li>b - L'égalité par consentement mutuel</li>
+                                <li>c - L'égalité par répétition</li>
+                                <li>d - La règle des 50 coups</li>
+                                <li>e - Le Pat</li>
+                            </ul>
+                            <li><a href="#mouvement-speciaux">2 - Les mouvements spéciaux</a></li>
+                            <ul>
+                                <li>a - La prise en passant</li>
+                                <li>b - Le Roque</li>
+                            </ul>
+                        </ul>
                     </ul>
-                    <li>II - Règles complémentaires</li>
-                    <ul>
-                        <li>1 - Les différents types d'égalité</li>
-                        <ul>
-                            <li>a - L'égalité par manque de matériel</li>
-                            <li>b - L'égalité par consentement mutuel</li>
-                            <li>c - L'égalité par répétition</li>
-                            <li>d - La règle des 50 coups</li>
-                            <li>e - Le Pat</li>
-                        </ul>
-                        <li>2 - Les mouvements spéciaux</li>
-                        <ul>
-                            <li>a - La prise en passant</li>
-                            <li>b - Le Roque</li>
-                        </ul>
-                    </ul>
-                </ul>
+                </div>
+                <div>
+                    <img alt="" src="./assets/phpHsVKt1.gif" />
+                </div>
             </div>
-            <div>
-                <img alt="" src="./assets/phpHsVKt1.gif" />
+
+            <h1 id ="presentation-globale">Présentation globale</h1>
+            <h2 id="ancre-plateau">Le plateau</h2>
+            <div id = "plateau">
+                <div>
+                    <img src="./assets/MatSot-0.gif">
+                </div>
+                <div>
+                    <p>Le plateau aux échecs est composé de 64 cases. Il s'agit d'un carré de 8x8.</p>
+                    <p>Les colonnes sont désignées par des lettres allant de a à h et les lignes sont désignées par des chiffres allant de 1 à 8.</p>
+                    <p>Le plateau est un damier qui alterne entre case claire et case sombre.</p>
+                    <p>Exemple : Le roi noir commence la partie en e8 et la reine blanche commence la partie en d1</p>
+                </div>
             </div>
-        </div>
 
-        <h1>Présentation globale</h1>
-        <h2>Le plateau</h2>
-        <div id = "plateau">
-            <div>
-                <img src="./assets/MatSot-0.gif">
+            <h2 id="ancre-pieces">Les pièces</h2>
+            <div id ="pieces">
+                <div>
+                    <img src="./assets/index.png">
+                </div>
+                <div>
+                    <p>Il existe six pièces différentes aux échecs :</p>
+                    <ol>
+                        <li><a href="#pion">Le pion</a></li>
+                        <li><a href="#fou">Le fou</a></li>
+                        <li><a href="#cavalier">Le cavalier</a></li>
+                        <li><a href="#tour">La tour</a></li>
+                        <li><a href="#reine">La reine</a></li>
+                        <li><a href="#roi">Le roi</a></li>
+                    </ol>
+                </div>
             </div>
-            <div>
-                <p>Le plateau aux échecs est composé de 64 cases. Il s'agit d'un carré de 8x8.</p>
-                <p>Les colonnes sont désignées par des lettres allant de a à h et les lignes sont désignées par des chiffres allant de 1 à 8.</p>
-                <p>Le plateau est un damier qui alterne entre case claire et case sombre.</p>
-                <p>Exemple : Le roi noir commence la partie en e8 et la reine blanche commence la partie en d1</p>
+            <p class="center">Chaque pièce dispose de mouvements spécifiques</p>
+
+            <h3 id="pion">Le pion</h3>
+            <div class = "box">
+                <div>
+                    <img src="./assets/index.jpg">
+                </div>
+                <div>
+                    <p>Chaque joueur dispose de 8 pions en début de partie.</p>
+                    <p>Le pion ne peut avancer qu'à la verticale et il ne peux avancer qu'en direction du camp adverse.</p>
+                    <p>Si un pion n'a pas encore bougé dans la partie, il peut avancer de deux cases. Sinon il ne peut avancer que d'une case par mouvement.</p>
+                    <p>Le pion ne peut capturer une pièce adverse qu'en diagonale devant lui.</p>
+                    <p>Exemple : si un pion blanc se trouve en e4, il ne peut capturer que les pièces adverses présentes en d5 et en f5.</p>
+                    <p>A l'inverse si le pion en e4 est noir il ne peut capturer que les pièces adverses présentes en d3 et en f3.</p>
+                </div>
             </div>
-        </div>
+            <h3 id="fou">Le fou</h3>
+            <p>Le fou ne peut se déplacer qu'en diagonale et, comme toutes les pièces, capture une pièce adverse en prenant sa place.</p>
+            <p>Chaque camp dispose donc d'un fou qui restera sur les cases claires et d'un fou qui restera sur les cases sombres.</p>
+            <p>Le fou peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
+            <p>Contrairement au cavalier, le fou ne peut pas se déplacer sur une case si une pièce adverse ou alliée se trouve sur le chemin.</p>
 
-        <h2>Les pièces</h2>
-        <div id ="pieces">
-            <div>
-                <img src="./assets/index.png">
+            <h3 id="cavalier">Le cavalier</h3>
+            <div class ="box">
+                <div>
+                    <img src="./assets/cavalier-deplacement.png">
+                </div>
+                <div>
+                    <p>Le cavalier est la seule pièce aux échecs qui peut se déplacer par dessus les pièces adverses et alliés.</p>
+                    <p>Il se déplace en "L", il peut potentiellement se déplacer sur 8 cases (sauf si elles sont occupées par des pièces alliées ou si il est trop proche du bord).</p>
+                    <p>Voir image ci-dessus pour clarification des possibilités de déplacements</p>
+                </div>
             </div>
-            <div>
-                <p>Il existe six pièces différentes aux échecs :</p>
-                <ol>
-                    <li><a href="#pion">Le pion</a></li>
-                    <li><a href="#fou">Le fou</a></li>
-                    <li><a href="#cavalier">Le cavalier</a></li>
-                    <li><a href="#tour">La tour</a></li>
-                    <li><a href="#reine">La reine</a></li>
-                    <li><a href="#roi">Le roi</a></li>
-                </ol>
+
+            <h3 id="tour">La tour</h3>
+            <p>La tour se déplace à l'horizontal ou à la verticale.</p>
+            <p>Tout comme le fou il peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
+
+            <h3 id="reine">La reine</h3>
+            <div class ="box">
+                <div>
+                    <img src="./assets/indexReine.jpg">
+                </div>
+                <div>
+                    <p>C'est la pièce la plus puissante aux échecs.</p>
+                    <p>Elle se déplace à l'horizontal, à la verticale ou en diagonale.</p>
+                    <p>Elle possède la capacité de déplacement d'une tour et d'un fou, et tout comme eux, peut se déplacer d'autant de cases vides qu'elle le souhaite.</p>
+                </div>
             </div>
-        </div>
-        <p class="center">Chaque pièce dispose de mouvements spécifiques</p>
 
-        <h3 id="pion">Le pion</h3>
-        <div class = "box">
-            <div>
-                <img src="./assets/index.jpg">
+            <h3 id="roi">Le roi</h3>
+            <p>Pour finir le roi est la pièce la plus importante.</p>
+            <p>C'est le roi que l'on cherche à défendre tout en essayant d'attaquer le roi adverse.</p>
+            <p>Le roi peut se déplacer dans toutes les directions, comme une reine, mais ne peut se déplacer que d'une case à la fois.</p>
+            <p>Le roi ne peut pas capturer le roi adverse, en effet, si il s'approche du roi adverse il sera lui même capturable et un roi ne peut pas se mettre en danger.</p>
+
+            <h2 id="but-du-jeu">Le but du jeu</h2>
+            <p>Aux échecs le but du jeu est de capturer le roi adverse.</p>
+            <p>Si un roi est menacé de capture par une pièce adverse il y a "échec au roi" ou plus simplement "échec".</p>
+            <p>Lorsqu'il y a "échec", le joueur dont le roi est menacé ne peut jouer que des mouvements qui vont mettre son roi hors de danger.</p>
+            <p>La partie s'arrête si un joueur n'a aucune possibilité pour défendre son roi ou le mettre hors de danger. Il y a alors "échec et mat".</p>
+
+            <h1 id="regle-complementaire">Règles complémentaires</h1>
+
+            <h2 id="ancre-egalite">Les différents types d'égalité</h2>
+            <p>L'égalité la plus évidente est si il ne reste plus que son roi à chaque joueur mais il existe d'autres situations où il y a match nul : </p>
+            <ol>
+                <li>L'égalité par manque de matériel</li>
+                <li>L'égalité par consentement mutuel</li>
+                <li>L'égalité par répétition</li>
+                <li>La régle des 50 coups</li>
+                <li>Le Pat</li>
+            </ol>
+
+            <h3>L'égalité par manque de matériel</h3>
+            <p>Il y a égalité si un joueur est dans l'impossibilité de mater son adversaire.</p>
+            <p>Cela se produit en roi contre roi, roi et fou contre roi et en roi et cavalier contre roi.</p>
+
+            <h3>L'égalité par consentement mutuel</h3>
+            <p>A tout moment de la partie, un joueur peut proposer la nulle.</p>
+            <p>Si son adversaire accepte, la partie est fini et il y a égalité.</p>
+
+            <h3>L'égalité par répétition</h3>
+            <p>Si une position sur le plateau est répétée trois fois de suite, c'est à dire si les pièces noirs et blanches se retrouvent à des positions identiques.</p>
+            <p>La partie est nulle par répétition.</p>
+
+            <h3>La règle des 50 coups</h3>
+            <p>Cette égalité est la moins commune aux échecs.</p>
+            <p>Si 50 coups se passent sans qu'un pion soit avancé ou qu'une pièce soit prise (25 coups par joueur), il y a égalité.</p>
+
+            <h3>Le Pat</h3>
+            <p>Si un joueur n'a aucun mouvement possible à son tour de jeu et que son roi n'est pas en échec, il y a Pat.</p>
+            <p>La partie est donc déclarée nulle.</p>
+
+            <h2 id="mouvement-speciaux">Les mouvements spéciaux</h2>
+
+            <h3>Le Roque</h3>
+            <div class ="box-speciaux">
+                <div>
+                    <p>C'est le seul mouvement aux échecs qui permet de bouger deux pièces d'un coup.</p>
+                    <p>Il concerne le roi et la tour et il ne peut s'effectuer que si les deux pièces n'ont pas bougé depuis le début de la partie.</p>
+                    <p>Il consiste à avancer le roi de deux cases vers la tour concernée et de placer la tour sur la première case parcourue.</p>
+                </div>
+                <div>
+                    <img src="./assets/Exemple_roque_2.png" alt="">
+                </div>
+                <div>
+                    <p>Sur l'image on peut voir les deux types de roque possible : le petit roque du côté noir et le grand roque du côté blanc.</p>
+                    <p>Pour effectuer un roque, toutes les cases entre le roi et la tour doivent être vides.</p>
+                    <p>Il faut également que le roi ne soit en échec, ni itialement, ni sur les deux cases qu'il parcourt.</p>
+                </div>
             </div>
-            <div>
-                <p>Chaque joueur dispose de 8 pions en début de partie.</p>
-                <p>Le pion ne peut avancer qu'à la verticale et il ne peux avancer qu'en direction du camp adverse.</p>
-                <p>Si un pion n'a pas encore bougé dans la partie, il peut avancer de deux cases. Sinon il ne peut avancer que d'une case par mouvement.</p>
-                <p>Le pion ne peut capturer une pièce adverse qu'en diagonale devant lui.</p>
-                <p>Exemple : si un pion blanc se trouve en e4, il ne peut capturer que les pièces adverses présentes en d5 et en f5.</p>
-                <p>A l'inverse si le pion en e4 est noir il ne peut capturer que les pièces adverses présentes en d3 et en f3.</p>
+
+            <h3>La prise en passant</h3>
+            <div class ="box-speciaux">
+                <div>
+                    <p>C'est le seul coup aux échecs où une pièce adverse est prise sans que notre pièce ne se retrouve sur sa case.</p>
+                    <p>Elle concerne uniquement les pions et est assez rare.</p>
+                </div>
+                <div>
+                    <img src="./assets/220px-Ajedrez_animación_en_passant.gif" alt="">
+                </div>
+                <div>
+                    <p>Pour pouvoir effectuer un "en passant" il faut qu'un pion adverse avance de deux cases et se retrouve à l'horizontal juste à côté d'un de nos pions</p>
+                    <p>Le pion peut alors capturer cette pièce en se positionnant en diagonal sur la première case parcouru par le pion adverse.</p>
+                </div>
             </div>
-        </div>
-        <h3 id="fou">Le fou</h3>
-        <p>Le fou ne peut se déplacer qu'en diagonale et, comme toutes les pièces, capture une pièce adverse en prenant sa place.</p>
-        <p>Chaque camp dispose donc d'un fou qui restera sur les cases claires et d'un fou qui restera sur les cases sombres.</p>
-        <p>Le fou peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
-        <p>Contrairement au cavalier, le fou ne peut pas se déplacer sur une case si une pièce adverse ou alliée se trouve sur le chemin.</p>
 
-        <h3 id="cavalier">Le cavalier</h3>
-        <div class ="box">
-            <div>
-                <img src="./assets/cavalier-deplacement.png">
-            </div>
-            <div>
-                <p>Le cavalier est la seule pièce aux échecs qui peut se déplacer par dessus les pièces adverses et alliés.</p>
-                <p>Il se déplace en "L", il peut potentiellement se déplacer sur 8 cases (sauf si elles sont occupées par des pièces alliées ou si il est trop proche du bord).</p>
-                <p>Voir image ci-dessus pour clarification des possibilités de déplacements</p>
-            </div>
-        </div>
-
-        <h3 id="tour">La tour</h3>
-        <p>La tour se déplace à l'horizontal ou à la verticale.</p>
-        <p>Tout comme le fou il peut se déplacer d'autant de cases vides qu'il le souhaite.</p>
-
-        <h3 id="reine">La reine</h3>
-        <div class ="box">
-            <div>
-                <img src="./assets/indexReine.jpg">
-            </div>
-            <div>
-                <p>C'est la pièce la plus puissante aux échecs.</p>
-                <p>Elle se déplace à l'horizontal, à la verticale ou en diagonale.</p>
-                <p>Elle possède la capacité de déplacement d'une tour et d'un fou, et tout comme eux, peut se déplacer d'autant de cases vides qu'elle le souhaite.</p>
-            </div>
-        </div>
-
-        <h3 id="roi">Le roi</h3>
-        <p>Pour finir le roi est la pièce la plus importante.</p>
-        <p>C'est le roi que l'on cherche à défendre tout en essayant d'attaquer le roi adverse.</p>
-        <p>Le roi peut se déplacer dans toutes les directions, comme une reine, mais ne peut se déplacer que d'une case à la fois.</p>
-        <p>Le roi ne peut pas capturer le roi adverse, en effet, si il s'approche du roi adverse il sera lui même capturable et un roi ne peut pas se mettre en danger.</p>
-
-        <h2>Le but du jeu</h2>
-        <p>Aux échecs le but du jeu est de capturer le roi adverse.</p>
-        <p>Si un roi est menacé de capture par une pièce adverse il y a "échec au roi" ou plus simplement "échec".</p>
-        <p>Lorsqu'il y a "échec", le joueur dont le roi est menacé ne peut jouer que des mouvements qui vont mettre son roi hors de danger.</p>
-        <p>La partie s'arrête si un joueur n'a aucune possibilité pour défendre son roi ou le mettre hors de danger. Il y a alors "échec et mat".</p>
-
-        <h1>Règles complémentaires</h1>
-        <h2>Les différents types d'égalité</h2>
-        <p>L'égalité la plus évidente est si il ne reste plus que son roi à chaque joueur mais il existe d'autres situations où il y a match nul : </p>
-        <ol>
-            <li>L'égalité par manque de matériel</li>
-            <li>L'égalité par consentement mutuel</li>
-            <li>L'égalité par répétition</li>
-            <li>La régle des 50 coups</li>
-            <li>Le Pat</li>
-        </ol>
-
-        <h3>L'égalité par manque de matériel</h3>
-        <p>Il y a égalité si un joueur est dans l'impossibilité de mater son adversaire.</p>
-        <p>Cela se produit en roi contre roi, roi et fou contre roi et en roi et cavalier contre roi.</p>
-
-        <h3>L'égalité par consentement mutuel</h3>
-        <p>A tout moment de la partie, un joueur peut proposer la nulle.</p>
-        <p>Si son adversaire accepte, la partie est fini et il y a égalité.</p>
-
-        <h3>L'égalité par répétition</h3>
-        <p>Si une position sur le plateau est répétée trois fois de suite, c'est à dire si les pièces noirs et blanches se retrouvent à des positions identiques.</p>
-        <p>La partie est nulle par répétition.</p>
-
-        <h3>La règle des 50 coups</h3>
-        <p>Cette égalité est la moins commune aux échecs.</p>
-        <p>Si 50 coups se passent sans qu'un pion soit avancé ou qu'une pièce soit prise (25 coups par joueur), il y a égalité.</p>
-
-        <h3>Le Pat</h3>
-        <p>Si un joueur n'a aucun mouvement possible à son tour de jeu et que son roi n'est pas en échec, il y a Pat.</p>
-        <p>La partie est donc déclarée nulle.</p>
-
-        <h2>Les mouvements spéciaux</h2>
-
-        <h3>Le Roque</h3>
-        <div class ="box-speciaux">
-            <div>
-                <p>C'est le seul mouvement aux échecs qui permet de bouger deux pièces d'un coup.</p>
-                <p>Il concerne le roi et la tour et il ne peut s'effectuer que si les deux pièces n'ont pas bougé depuis le début de la partie.</p>
-                <p>Il consiste à avancer le roi de deux cases vers la tour concernée et de placer la tour sur la première case parcourue.</p>
-            </div>
-            <div>
-                <img src="./assets/Exemple_roque_2.png" alt="">
-            </div>
-            <div>
-                <p>Sur l'image on peut voir les deux types de roque possible : le petit roque du côté noir et le grand roque du côté blanc.</p>
-                <p>Pour effectuer un roque, toutes les cases entre le roi et la tour doivent être vides.</p>
-                <p>Il faut également que le roi ne soit en échec, ni itialement, ni sur les deux cases qu'il parcourt.</p>
-            </div>
-        </div>
-
-        <h3>La prise en passant</h3>
-        <div class ="box-speciaux">
-            <div>
-                <p>C'est le seul coup aux échecs où une pièce adverse est prise sans que notre pièce ne se retrouve sur sa case.</p>
-                <p>Elle concerne uniquement les pions et est assez rare.</p>
-            </div>
-            <div>
-                <img src="./assets/220px-Ajedrez_animación_en_passant.gif" alt="">
-            </div>
-            <div>
-                <p>Pour pouvoir effectuer un "en passant" il faut qu'un pion adverse avance de deux cases et se retrouve à l'horizontal juste à côté d'un de nos pions</p>
-                <p>Le pion peut alors capturer cette pièce en se positionnant en diagonal sur la première case parcouru par le pion adverse.</p>
+            <h1>Quelques liens vidéos</h1>
+            <div id="box-video">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c7BVtGnlxT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HYjQ9mewroY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QZ7-8MntaEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </body>

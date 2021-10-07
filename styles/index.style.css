@@ -26,6 +26,10 @@ li {
     font-size: 25px;
 }
 
+#marge{
+    margin: 30px;
+}
+
 #sommaire{
     display: flex;
     justify-content: space-around;
@@ -55,4 +59,10 @@ li {
     display: flex;
     justify-content:space-evenly;
     flex-flow: wrap row;
+}
+
+#box-video{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
 }
